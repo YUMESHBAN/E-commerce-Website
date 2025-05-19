@@ -26,10 +26,12 @@ app.use(cookieParser());
 //routes
 
 import userRouter from "./routes/user.routes.js";
+import categoryRouter from "./routes/category.routes.js";
 
 //routes declaration
 //middleware needed for routes
 
 app.use("/api/v1/users", userRouter);
+app.use("/api/v1/categories", categoryRouter);
 
 export { app };
